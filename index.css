@@ -1,0 +1,46 @@
+#description{
+    padding:30px;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto 200px auto;
+    color: rgb(40,40,40);
+}
+#description{
+    display: flex;
+    flex-direction: column;
+}
+#description span{
+    margin:  5px 0  ;
+}
+#cardSection{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    background-color:rgb(240,240,240);
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+}
+.card a{
+    color: black;
+    padding: 3px;
+}
+
+@media only screen and (max-width:799px){
+    #cardSection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 90%;
+    }
+}
